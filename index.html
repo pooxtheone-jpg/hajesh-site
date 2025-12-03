@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>english or spanish</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial;
+      font-size: 32px;
+      user-select: none;
+    }
+    #page2 { display: none; }
+  </style>
+</head>
+<body>
+  <div id="page1" onclick="goToPage2()">
+    english or spanish
+  </div>
+  <div id="page2">
+    if you move you are hajesh
+  </div>
+  
+  <script>
+    function goToPage2() {
+      document.getElementById("page1").style.display = "none";
+      document.getElementById("page2").style.display = "flex";
+    }
+  </script>
+</body>
+</html>
